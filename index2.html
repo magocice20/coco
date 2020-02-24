@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="estilo2.css">
+    <title>Document</title>
+    <script>
+        function mostrar() {
+            console.log("mostrando");
+            var elrango = document.querySelector("#dimensiones");
+            document.querySelector("#valor").innerHTML = elrango.value;
+        }
+
+    </script>
+</head>
+
+<body>
+    <form action="calculadora.php" method="POST" id="fvarios">
+
+        <input type="text" name="nombre" id="textNombre" placeholder="Introduce tu nombre" size="100"
+            maxlength="10"><br>
+        <input type="number" name="nombre" id="nombre" placeholder="" min="10" max="20" required="true"><br>
+        <input type="email" name="nombre" id="nombre" placeholder="Introduce tu email" size="50" maxlength="100"><br>
+        <input type="password" name="nombre" id="nombre" placeholder="Introduce tu password" size="50"
+            maxlength="100"><br>
+        <input type="date" name="nombre" id="nombre" min="2018-01-01" max="2020-12-12"><br>
+        <input type="time"><br>
+        <input type="color" name="nombre" id="color"><br>
+        <input type="range" id="dimensiones" min="10" max="100" step="5" oninput="mostrar()" onchange="mostrar()"><span
+            id="valor"></span><br>
+        <input type="file"><br>
+        <input type="hidden" name="dni" value="00202022S"><br> <!-- envia datos sin visualizar-->
+        <textarea name="textolargo" rows="10" cols="50" placeholder="Introduce texto"></textarea><br>
+        <!--readonly="true" :   -->
+
+        <label for="cars">Choose a car:</label>
+        <select id="cars" name="carlist">
+            <option value="-1" selected="true">(Selecciona una opción)</option>
+            <option value="volvo">Volvo</option>
+            <option value="saab">El coche de Torrente</option>
+            <option value="opel">Opel</option>
+            <option value="audi">Audi</option>
+        </select>
+        <br>
+
+        <label for="elcampeon">Real Madrid</label>
+        <input type="radio" name="equipo" value="Rm" id="elcampeon">
+        <label for="equipo">Atletico de Madrid</label>
+        <input type="radio" name="equipo" value="Atm" checked> <!--marca por defecto-->
+        <label for="equipo">Otros</label>
+        <input type="radio" name="equipo" value="Otro">
+
+        <br>
+        <label for="equipo">Real Madrid</label>
+        <input type="checkbox" name="equipoRm" >
+        <label for="equipo">Atletico de Madrid</label>
+        <input type="checkbox" name="equipoAtm">
+        <label for="equipo">Otros</label>
+        <input type="checkbox" name="equipoOtr">
+        <br>
+        <br>
+
+        <label for="cars">Choose a car:</label>
+        <select id="cars" name="carlist" size="8" multiple="true">
+            <option value="-1" selected="true">(Selecciona una opción)</option>
+            <option value="volvo">Volvo</option>
+            <option value="saab">El coche de Torrente</option>
+            <option value="opel">Opel</option>
+            <option value="audi">Renault</option>
+            <option value="volvo">Seat</option>
+            <option value="saab">BMW</option>
+            <option value="opel">Kia</option>
+            <option value="audi">Rover</option>
+        </select>
+        <br>
+
+
+
+
+        <input type="reset" value="limpiar"><br>
+        <input type="submit" value="verificar"> <br> <!-- validacion y envio de formulario-->
+
+    </form>
+</body>
+
+</html>

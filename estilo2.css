@@ -1,0 +1,15 @@
+#textNombre {
+    padding: 1em;
+    background-color: black;
+    color: darkorange ;
+    font-weight: bold;
+    font-style: italic;
+}
+#textNombre:hover {
+    background-color: firebrick;
+    color: whitesmoke;
+}
+#cars {
+    background-color: black;
+    color: chartreuse;
+}
