@@ -1,0 +1,33 @@
+#rojo {color: red;}
+
+#cuadroizquierda{  /*El elemento con id cuadroPrincipal} */
+   width: 55%;
+   float: left;
+   margin: auto;
+   background-color: rgb(227, 227, 240);
+   padding:30px; 
+}
+#cuadroderecha{  /*El elemento con id cuadroPrincipal} */
+   width: 30%;
+   float: left;
+   margin: auto;
+   background-color: rgb(227, 227, 240);
+   padding:30px; }
+
+.ancho100 {
+    width: 20%;
+    padding:5px; 
+    margin-bottom: 10px;
+}
+.textochico{
+    font-size: 1.6em;
+}
+
+.textogrande{
+    font-size: 2.6em;
+    font-weight: bolder;
+    line-height: 5px;
+   }
+
+.fondogris {
+    background-color: rgb(248, 247, 247);

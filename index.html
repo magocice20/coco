@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Noticias antiguas</title>
+    <script>
+        function validar(){
+            var email = document.getElementById("email").value;
+            var pwd = document.getElementById("micontrasenya").value;
+            if (email=="x@gmail.com" && pwd=="patata"){
+                window.location.href="cv.html";
+            } else {
+                alert("IMPOSTOR");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1 id="rojo"> Hola mundo soy Victor-Pro </h1>
+    <div id="cuadroizquierda"> <img src="./images/araña.jpg" width="280" height="157" alt="">
+        <iframe width="280" height="157" src="https://www.youtube.com/embed/UwfxffgnV2Y" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div id="cuadroderecha"><iframe width="280" height="157" src="https://www.youtube.com/embed/QOf0gagsG0Q"
+            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        <iframe width="280" height="157" src="https://www.youtube.com/embed/Q0ApOVO5pO4" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <form action="" method="">
+        <div id=div1>
+            <input class="ancho100 fondogris" type="nombre" name="" id="nombre" placeholder="Nombre">
+        </div>
+        <div id=div2>
+            <input class="ancho100 fondogris" type="apellidos" name="" id="apellidos" placeholder="Apellidos">
+        </div>
+        <div id=div3>
+            <input class="ancho100 fondogris" type="movilcorr" name="" id="movilcorr"
+                placeholder="Número de móvil o correo electrónico">
+        </div>
+        <div id=div4>
+            <input class="ancho100 fondogris" type="contraseña" name="" id="contraseña" placeholder="Contraseña nueva">
+        </div>
+    </form>
+    <form action="" method="">
+        <input class="ancho100 fondogris" type="email" name="" id="email" placeholder="correo electronico"> 
+        <input class="ancho100 fondogris" type="password" name="" id="micontrasenya">
+        <input class="botonazul ancho100" type="button" value="Validar" onclick="validar()">
+    </form>
+
+</body>
+
+</html>
